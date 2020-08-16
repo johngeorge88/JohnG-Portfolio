@@ -1,0 +1,68 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+:root {
+    --Light-Blue: rgb(159, 198, 205);
+    --Dark-Blue: rgb(49, 52, 62);
+}
+/* apply styles to <header> */
+header {
+    padding: 20px 35px 20px 0;
+    background-color: var(--Dark-Blue);
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+header h1{
+    background-color: var(--Light-Blue);
+    color: var(--Dark-Blue);
+    text-align: left;
+    padding: 5px 5px 5px 60px;
+}
+header a {
+    text-decoration: none;
+    color: var(--Light-Blue);
+}
+header nav {
+    margin: 7px 0;
+}
+header nav ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+}
+
+header nav ul li a {
+    padding: 5px 30px;
+    font-weight: lighter;
+    font-size: 22px;
+    border-bottom: 3px solid;
+    border-width: 5 px;
+    margin-bottom: 0;
+    width: 10%;
+}
+
+/* Hero styling */
+.hero {
+    display: flex;
+    flex-wrap: wrap;
+    background-image: url("../images/hero.jpg");
+    align-items: flex-end;
+    justify-content: flex-end;
+    background-repeat: no-repeat;
+    height: 400px;
+    margin: 0;
+    padding: 50px;
+}
+.hero .hero-text {
+    background-color: var(--Light-Blue);
+    color: var(--Dark-Blue);
+    font-size: 23px;
+    padding: 10px;
+    box-shadow: -3px 0px 5px var(--Light-Blue);
+}
