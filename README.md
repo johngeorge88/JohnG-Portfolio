@@ -9,4 +9,4 @@ Click on my work and it will take you directly to the website/application.<br>
 <li>HTML</li>
 <li>CSS</li>
 </ul>
-<img src="./my-portfolio.png"/>
+<img src=".\My-Portfolio.png"/>
