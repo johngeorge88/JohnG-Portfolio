@@ -48,6 +48,7 @@ header nav ul li a {
     margin-right: 10px;
     width: 10%;
 }
+/* header styling end */
 
 /* Hero styling */
 .hero {
@@ -69,6 +70,7 @@ header nav ul li a {
     padding: 10px;
     box-shadow: -3px 0px 5px var(--Light-Blue);
 }
+/* Hero styling end */
 
 /* Bio Styling */
 .main-bio {
@@ -100,6 +102,7 @@ header nav ul li a {
     padding-left: 20px;
     width: 80%;
 }
+/* BIO styling end */
 
 /* work styling */
 .grid-container {
@@ -156,6 +159,7 @@ header nav ul li a {
     background-size: cover;
     background-repeat: no-repeat;
 }
+/* Work styling end */
 
 /* Contact me styling */
 #contact-me .content a {
@@ -185,13 +189,15 @@ header nav ul li a {
     margin-right: 10px;
     width: 10%;
 }
+/* Contact me styling end */
+
 /* MEDIA QUERY FOR SMALLER DESKTOP SCREENS AND SMALLER */
 @media screen and (max-width: 980px) {
     .header {
        padding-bottom: 0;
        justify-content: center;
        position: relative;
-       }
+    }
      
      .header h1 {
        width: 100%;
@@ -228,7 +234,7 @@ header nav ul li a {
         justify-content: center;
         text-align: center;
     }
-    }
+}
     
 
 /* MEDIA QUERY FOR TABLETS AND SMALLER */
@@ -241,9 +247,10 @@ header nav ul li a {
     }
     .main-bio .work-intro, .content h1 {
         font-size: 30px;
-}
-.grid-item::after {
-    background-color: transparent;
+    }
+    .grid-item::after {
+        background-color: transparent;
+    }
 }
 
 /* MEDIA QUERY FOR MOBILE PHONES AND SMALLER */
