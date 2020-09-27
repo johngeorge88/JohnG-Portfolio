@@ -153,6 +153,12 @@ header nav ul li a {
 .grid-item p {
     font-size: 10px;
 }
+.grid-item.TourVid {
+    background-image: url(../images/TourVid-travel-planner.png);
+    background-position: top;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
 .grid-item.run-buddy {
     background-image: url(../images/Run-Buddy.png);
     background-position: top;
