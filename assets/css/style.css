@@ -4,12 +4,16 @@
     box-sizing: border-box;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
+
 :root {
     --Light-Blue: rgb(159, 198, 205);
     --Dark-Blue: rgb(49, 52, 62);
     --text-color: rgb(70, 86, 113);
 }
+
+
 /* apply styles to <header> */
+
 header {
     padding: 20px 35px 20px 0;
     background-color: var(--Dark-Blue);
@@ -17,19 +21,23 @@ header {
     justify-content: space-between;
     flex-wrap: wrap;
 }
-header h1{
+
+header h1 {
     background-color: var(--Light-Blue);
     color: var(--Dark-Blue);
     text-align: left;
     padding: 5px 5px 5px 60px;
 }
+
 header a {
     text-decoration: none;
     color: var(--Light-Blue);
 }
+
 header nav {
     margin: 7px 0;
 }
+
 header nav ul {
     display: flex;
     flex-wrap: wrap;
@@ -48,9 +56,13 @@ header nav ul li a {
     margin-right: 10px;
     width: 10%;
 }
+
+
 /* header styling end */
 
+
 /* Hero styling */
+
 .hero {
     display: flex;
     flex-wrap: wrap;
@@ -63,6 +75,7 @@ header nav ul li a {
     margin: 0;
     padding: 50px;
 }
+
 .hero .hero-text {
     background-color: var(--Light-Blue);
     color: var(--Dark-Blue);
@@ -70,15 +83,20 @@ header nav ul li a {
     padding: 10px;
     box-shadow: -3px 0px 5px var(--Light-Blue);
 }
+
+
 /* Hero styling end */
 
+
 /* Bio Styling */
+
 .main-bio {
     padding: 50px;
     align-content: center;
     justify-content: flex-start;
     background-color: rgb(237, 238, 246);
 }
+
 .content {
     padding-bottom: 50px;
     display: flex;
@@ -86,7 +104,9 @@ header nav ul li a {
     flex-direction: row;
     color: var(--text-color);
 }
-.main-bio .work-intro, .content h1 {
+
+.main-bio .work-intro,
+.content h1 {
     justify-content: right;
     align-content: flex-start;
     font-weight: bold;
@@ -97,35 +117,42 @@ header nav ul li a {
     width: 20%;
     border-right: 5px solid;
 }
-.main-bio .content > div {
+
+.main-bio .content>div {
     align-content: flex-start;
     padding-left: 20px;
     width: 80%;
 }
+
+
 /* BIO styling end */
 
+
 /* work styling */
+
 .grid-container {
     display: grid;
     grid-template-rows: 150px 150px 150px;
     grid-template-columns: auto auto auto;
     grid-gap: 10px;
-        
 }
+
 .grid-item-border {
     border: 2px solid lightblue;
-
 }
+
 .grid-item-border.surf-report {
     grid-row: 1 /span 2;
     grid-column: 1 /span 2;
     width: 100%;
-} 
+}
+
 .grid-item {
     position: relative;
     text-decoration: none;
     color: var(--Dark-Blue);
 }
+
 .grid-item::after {
     content: "";
     background: var(--Light-Blue);
@@ -138,11 +165,13 @@ header nav ul li a {
     z-index: 1;
     transition: 0.5s;
 }
+
 .grid-item:hover:after {
     opacity: 0;
     transition: 0.5s;
 }
-.grid-item > div {
+
+.grid-item>div {
     position: absolute;
     background-color: var(--Light-Blue);
     padding: 15px;
@@ -150,33 +179,49 @@ header nav ul li a {
     line-height: 1.5;
     z-index: 2;
 }
+
 .grid-item p {
     font-size: 10px;
 }
+
 .grid-item.TourVid {
     background-image: url(../images/TourVid-travel-planner.png);
     background-position: top;
     background-size: cover;
     background-repeat: no-repeat;
 }
+
+.my-studio {
+    background-image: url(../images/My-Studio-Portal.png);
+    background-position: top;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
 .grid-item.run-buddy {
     background-image: url(../images/Run-Buddy.png);
     background-position: top;
     background-size: cover;
     background-repeat: no-repeat;
 }
+
+
 /* Work styling end */
 
+
 /* Contact me styling */
+
 #contact-me .content a {
     text-decoration: none;
     color: var(--text-color);
 }
+
 #contact-me .content div {
     display: flex;
     margin: 7px 0;
     align-content: center;
 }
+
 #contact-me .content ul {
     display: flex;
     flex-wrap: wrap;
@@ -185,6 +230,7 @@ header nav ul li a {
     list-style: none;
     width: 100%;
 }
+
 #contact-me .content ul li a {
     padding: 0px 10px;
     font-weight: lighter;
@@ -195,32 +241,36 @@ header nav ul li a {
     margin-right: 10px;
     width: 10%;
 }
+
+
 /* Contact me styling end */
 
+
 /* MEDIA QUERY FOR SMALLER DESKTOP SCREENS AND SMALLER */
+
 @media screen and (max-width: 980px) {
     .header {
-       padding-bottom: 0;
-       justify-content: center;
-       position: relative;
+        padding-bottom: 0;
+        justify-content: center;
+        position: relative;
     }
-     
-     .header h1 {
-       width: 100%;
-       text-align: center;
-     }
-     .header nav ul {
-       margin-top: 20px;
-       width: 100%;
-       justify-content: center;
-     }
-     .header nav ul li a {
-       font-size: 20px;
-     }
-     .main-bio .work-intro, .content h1 {
+    .header h1 {
+        width: 100%;
+        text-align: center;
+    }
+    .header nav ul {
+        margin-top: 20px;
+        width: 100%;
+        justify-content: center;
+    }
+    .header nav ul li a {
+        font-size: 20px;
+    }
+    .main-bio .work-intro,
+    .content h1 {
         font-size: 30px;
-     }
-     #contact-me .content ul li {
+    }
+    #contact-me .content ul li {
         width: 80%;
         margin: auto;
         text-align: center;
@@ -241,17 +291,19 @@ header nav ul li a {
         text-align: center;
     }
 }
-    
+
 
 /* MEDIA QUERY FOR TABLETS AND SMALLER */
+
 @media screen and (max-width: 769px) {
-      .main-bio .work-intro .content h1 {
+    .main-bio .work-intro .content h1 {
         font-size: 30px;
     }
     header nav ul li a {
         padding: 0px;
     }
-    .main-bio .work-intro, .content h1 {
+    .main-bio .work-intro,
+    .content h1 {
         font-size: 30px;
     }
     .grid-item::after {
@@ -259,12 +311,14 @@ header nav ul li a {
     }
 }
 
+
 /* MEDIA QUERY FOR MOBILE PHONES AND SMALLER */
+
 @media screen and (max-width: 575px) {
     header {
         padding: 5px;
     }
-    header h1{
+    header h1 {
         display: block;
         width: 100%;
         text-align: center;
@@ -303,12 +357,13 @@ header nav ul li a {
         display: block;
         padding: 5px;
     }
-    .main-bio .content > div {
+    .main-bio .content>div {
         width: 100%;
         padding: 0px;
         margin: 0px;
     }
-    .main-bio .work-intro, .content h1 {
+    .main-bio .work-intro,
+    .content h1 {
         align-content: center;
         justify-content: center;
         text-align: center;
